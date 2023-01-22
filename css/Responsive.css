@@ -1,0 +1,339 @@
+/* Taplet Style */
+@media screen and (max-width:1100px) {
+    .sidebar_icon{
+        display: block;
+        color: var(--white_milk);
+        font-size: 40px;
+        cursor: pointer;
+    }
+    .close_icon{
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    .close_icon:hover{
+        opacity: 0.7;
+    }
+    main{
+        height: 100vh;
+    }
+    .sidebar_container{
+        width: 40%;
+        position: absolute;
+        top:0;
+        left: 0;
+        display: none;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .sidebar_active{
+        display: block;
+        animation: width ease-in-out 0.5s;
+    }
+    .title_name,.hi_there{
+        font-size: 35px;
+    }
+    .frontend{
+        width: 220px;
+        font-size: 17px;
+    }
+
+    @keyframes width {
+        0%{
+            width: 0%;
+            opacity: 0;
+        }
+        100%{
+            width: 40%;
+            opacity: 1;
+        }
+    }
+
+    .about_me{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        height: 100vh;
+
+    }
+
+    .dots_shape{
+        display: none;
+    }
+
+    .main_paragraph{
+        width: 100%;
+    }
+    .right_side{
+        margin: 100px 250px;
+    }
+    .square{
+        margin:0 250px;
+    }
+
+    .skills_container{
+        display: flex;
+        margin: 0 auto;
+        margin: 100px -25px;
+        padding: 0;
+    }
+    
+    .skill{
+        margin: 30px;
+        text-align: center;
+    }
+    
+    
+    
+    .skills_container img{
+        width: 100px;
+    }
+    
+    .bootstrap img{
+        width: 125px;
+    }
+
+    .projects_container{
+        padding: 0;
+    }
+    .projects_img{
+        width: 100%;
+        background-position: center;
+        margin-inline: 0;
+    }
+
+    .projects_img:nth-child(2){
+        margin-left: 15px;
+    }
+
+    .projects_img:nth-child(4){
+        margin-left: 15px;
+    }
+    
+    
+}
+
+/* Mobile Style*/
+
+@media  screen and (max-width:600px) {
+    .landing_container{
+        display: grid;
+        padding: 0;
+        padding-top: 25px;
+        padding-bottom: 50px ;
+    }
+
+    .text_container{
+        padding: 0;
+    }
+
+    .landing_container img{
+        width: 100%;
+    }
+    .sidebar_container{
+        width: 100%;
+        padding: 0;
+        padding-left:5px ;
+    }
+
+    .about_me{
+        padding-bottom: 150px;
+        padding-left: 150px;
+    }
+    .waves_shape{
+       width: 150px;
+       height: 70px;
+    }
+
+    .right_side{
+        width: 50%;
+        padding: 0;
+        margin: 70px auto;
+    }
+    .square{
+        width: 200px;
+        height: 200px;
+    }
+
+    .front_square{
+        top: 0;
+        left: 0px;
+    }
+
+    .hello{
+        font-size: 50px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .about_me{
+        padding: 35px;
+    }
+
+
+    .main_paragraph{
+        width: 80%;
+    }
+
+    .skills{
+        padding: 40px;
+        height: 100vh;
+    }
+
+
+    .header_skills{
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
+    .title:after{
+        top: 35px;
+        left: 60px;
+    }
+
+
+    .M_shape{
+        top: 52px;
+    }
+
+    
+    .skills_container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .skill{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .works{
+        padding: 40px;
+        height: 100%;
+    }
+
+
+    .header_works{
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        padding-top: 15px ;
+    }
+
+    .title_works{
+        font-size: 35px;
+    }
+
+    .title_works::after{
+        top: 35px;
+        left: 60px;
+    }
+
+
+    .M_shape_works{
+        top: -28px;
+    }
+
+    .small_title{
+        left: 90px;
+        top: 65px;
+    }
+
+    .projects_container{
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    .projects_img:nth-child(2){
+        margin-left: 0px;
+    }
+
+    .projects_img:nth-child(4){
+        margin-left: 0px;
+    }
+
+
+    .contact{
+        padding: 20px;
+        height: 100%;
+    }
+
+
+    .header_contact{
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        padding-top: 15px ;
+    }
+
+    .title_contact{
+        font-size: 35px;
+    }
+
+    .title_contact::after{
+        top: 35px;
+        left: 60px;
+    }
+
+
+    .c_shape_contact{
+        top: 62px;
+    }
+
+    .form{
+        margin: 50px auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputs{
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .submit_btn{
+        width: 86%;
+        margin: 0px auto;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .sidebar_active{
+        display: block;
+        animation: width ease-in-out 0.5s;
+    }
+
+    @keyframes width {
+        0%{
+            width: 0%;
+            opacity: 0;
+        }
+        100%{
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}
